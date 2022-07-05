@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MonsterMotors</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
   </head>
   <body>
     <header id="encabezado">
@@ -15,7 +16,7 @@
         <li>18 CUOTAS SIN INTERÉS</li>
       </ul>
       <div class="navbar">
-        <img src="./Imagenes/Logo.jpg" alt="imagenLogo" />
+        <img src="./Imagenes/Logo.jpg" alt="imagenLogo" class="wow pulse" />
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="motos.html">MOTOS</a></li>
@@ -25,7 +26,11 @@
         </ul>
       </div>
       <section>
-        <img src="./imagenes/baner.jpg" alt="imagenBanner" />
+        <img
+          class="wow fadeInDown"
+          src="./imagenes/baner.jpg"
+          alt="imagenBanner"
+        />
       </section>
     </header>
     <main id="productos">
@@ -50,10 +55,12 @@
             praesentium officiis ipsa aliquam quam laudantium.
           </p>
         </div>
-        <img class="supermotos__imgtamaño" src="./Imagenes/bmw.jpg" alt="" />
+        <img class="supermotos__imgtamaño wow flash" data-wow-iteration="4"
+        data-wow-duration="3.5s"" src="./Imagenes/bmw.jpg" alt="" />
       </div>
       <div class="supermotos" id="zusukireverse">
-        <img class="supermotos__imgtamaño" src="./Imagenes/suzuki.jpg" alt="" />
+        <img class="supermotos__imgtamaño wow flash" data-wow-iteration="4"
+        data-wow-duration="3.5s"" src="./Imagenes/suzuki.jpg" alt="" />
         <div class="supermotos__titulotexto">
           <h2 class="supermotos__suzukititle">Suzuki GSX-R1000R</h2>
           <p>
@@ -89,5 +96,9 @@
         <h2>@MonstersMotors</h2>
       </section>
     </footer>
+    <script src="./js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
